@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { FiMenu, FiX } from 'react-icons/fi'; // Import menu icons from react-icons
+import { FiMenu, FiX } from 'react-icons/fi';
 
-function Header() {
+function Header({ inLogin }) {
   const [isOpen, setIsOpen] = useState(false);
 
   // Toggle dropdown
@@ -11,8 +11,8 @@ function Header() {
   };
 
   return (
-    <header className="absolute top-4 left-0 right-0 z-50 text-black w-full">
-      <div className="w-full md:w-4/5 flex justify-between items-center py-4 px-4 md:px-6 mx-auto">
+    <header className={`${inLogin ? 'relative md:p-0' : ' absolute top-4 left-0 right-0 z-50'} text-black w-full`}>
+      <div className={`${inLogin ? "w-full md:w-4/5 flex justify-between items-center py-4 px-4 md:px-20" : "w-full md:w-4/5 flex justify-between items-center py-4 px-4 "}`}>
         {/* Logo */}
         <div className="text-xl md:text-2xl font-bold">Your Logo</div>
 
