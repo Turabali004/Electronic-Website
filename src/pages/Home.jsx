@@ -1,7 +1,7 @@
 import React from "react";
 import { Hero, PrimaryBtn, ProductCard, Footer, Header } from "../components";
 import FeatureImg from "/public/images/featureImg.png";
-import IphomeImg from "/public/images/productbyimg.png";
+// import IphomeImg from "/public/images/productbyimg.png";
 import { AiFillStar } from "react-icons/ai";
 import airpodsImage from "/public/images/awesomeairpods.png";
 import watchImage from "/public/images/smartWatches.png";
