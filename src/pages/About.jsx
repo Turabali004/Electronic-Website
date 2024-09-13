@@ -12,37 +12,37 @@ function About() {
   return (
     <div>
       <Header inLogin={true} />
-      <div className="w-screen bg-primary text-center p-4 font-semibold">
-        Are you university or school for an onlnie partnership?
+      <div className="w-full bg-primary text-center p-4 font-semibold">
+        Are you a university or school for an online partnership?
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center justify-evenly px- bg-white">
-        <div className="w-2/5 mb-8 lg:mb-0 px-20">
+      <div className="flex flex-col lg:flex-row items-center justify-evenly bg-white px-4 lg:px-20 py-10">
+        <div className="w-full lg:w-2/5 mb-8 lg:mb-0">
           <h1 className="text-3xl lg:text-5xl font-bold mb-4">
             Open a Mobile Accessories Store Online
           </h1>
-          <p className="text-lg lg:text-3xl mb-4  font-semibold ">
+          <p className="text-lg lg:text-2xl mb-4 font-semibold">
             Best Tips to Start an Online Business
           </p>
-          <button className="bg-red-500 text-white px-6 py-3 rounded-lg text-lg font-semibold">
+          <button className="bg-red-500 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-red-600 transition-all">
             Shop now
           </button>
         </div>
-        <div className="w-3/5 flex justify-center items-center lg:justify-end ">
+        <div className="w-full lg:w-3/5 flex justify-center items-center lg:justify-end">
           <img
             src={mobileAccessoriesImage}
             alt="Mobile Accessories"
-            className="w-full"
+            className="w-full max-w-lg"
           />
         </div>
       </div>
 
-      {/* Statistics-Section */}
+      {/* Statistics Section */}
       <div className="bg-blue-200 py-12">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-around items-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {statistics.map((stat, index) => (
-              <div key={index} className="text-center mb-8 md:mb-0">
+              <div key={index}>
                 <p className="text-3xl md:text-4xl font-bold">{stat.value}</p>
                 <p className="text-xl md:text-2xl">{stat.label}</p>
               </div>
@@ -51,14 +51,11 @@ function About() {
         </div>
       </div>
 
-      {/* Befnefit-Section */}
+      {/* Benefit Section */}
       <div className="bg-gray-100 py-20">
-        {/* First Section */}
-        <section className="py-16 bg-gray-100">
+        <section className="py-16">
           <div className="text-center mb-12">
-            <h3 className="text-red-500 text-lg font-semibold">
-              Why choose us
-            </h3>
+            <h3 className="text-red-500 text-lg font-semibold">Why choose us</h3>
             <h2 className="text-3xl font-bold mt-2">
               Benefits of online buying service with us
             </h2>
@@ -69,8 +66,7 @@ function About() {
             <div className="bg-gray-200 p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold mb-2">Choose teaching</h3>
               <p className="text-gray-600">
-                Simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry standard.
+                Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard.
               </p>
             </div>
 
@@ -78,8 +74,7 @@ function About() {
             <div className="bg-gray-200 p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold mb-2">24/7 Available</h3>
               <p className="text-gray-600">
-                Simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry standard.
+                Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard.
               </p>
             </div>
 
@@ -87,8 +82,7 @@ function About() {
             <div className="bg-gray-200 p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold mb-2">Whiteboard</h3>
               <p className="text-gray-600">
-                Simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry standard.
+                Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard.
               </p>
             </div>
 
@@ -96,15 +90,14 @@ function About() {
             <div className="bg-gray-200 p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold mb-2">Affordable Price</h3>
               <p className="text-gray-600">
-                Simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry standard.
+                Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard.
               </p>
             </div>
           </div>
         </section>
 
         {/* Second Section */}
-        <section className="py-16 ">
+        <section className="py-16">
           <div className="container mx-auto flex flex-col lg:flex-row items-center gap-8 px-4">
             {/* Image Section with Circular Image */}
             <div className="relative w-full lg:w-1/2">
@@ -126,17 +119,12 @@ function About() {
 
             {/* Text Section */}
             <div className="w-full lg:w-1/2 text-left">
-              <h3 className="text-red-500 text-lg font-semibold">
-                Customer your product us
-              </h3>
+              <h3 className="text-red-500 text-lg font-semibold">Customer your product with us</h3>
               <h2 className="text-3xl font-bold mt-2">
                 Personalized professional online buying on your schedule
               </h2>
               <p className="text-gray-600 mt-4">
-                Simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type
-                and scrambled it to make a type specimen book.
+                Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
               </p>
 
               <button className="mt-6 bg-red-500 text-white py-2 px-6 rounded-lg shadow-lg hover:bg-red-600">
@@ -144,25 +132,19 @@ function About() {
               </button>
             </div>
           </div>
-
-          {/* Additional Image Section */}
         </section>
 
         {/* Third Section */}
-        <div className="py-16 ">
+        <div className="py-16">
           <div className="container mx-auto flex flex-col lg:flex-row items-center gap-8 px-4">
             {/* Text Section */}
             <div className="w-full lg:w-1/2 text-left">
-              <h3 className="text-red-500 text-lg font-semibold">
-                Customer your product with us
-              </h3>
+              <h3 className="text-red-500 text-lg font-semibold">Customer your product with us</h3>
               <h2 className="text-3xl font-bold mt-2">
                 Personalized professional online buying on your schedule
               </h2>
               <p className="text-gray-600 mt-4">
-                This is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
+                This is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
               </p>
               <button className="mt-6 bg-red-500 text-white py-2 px-6 rounded-lg shadow-lg hover:bg-red-600">
                 Get started
@@ -188,52 +170,42 @@ function About() {
         </div>
       </div>
 
-
-      {/* Testimonial-Section */}
-
+      {/* Testimonial Section */}
       <section className="bg-white py-12">
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-red-600 text-lg font-semibold mb-2">Our testimonial</h2>
-        <h3 className="text-black text-2xl font-bold mb-8">What our users say about us</h3>
-        <div className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 ">
-          <div className="testimonial-user">
-            <img
-              src="https://via.placeholder.com/150 "
-              alt="User 1"
-              className=" rounded-full mb-4 h-20"
-            />
-            
-          </div>
-          <div className="testimonial-user">
-            <img
-              src="https://via.placeholder.com/150"
-              alt="User 2"
-              className="mx-auto rounded-full mb-4 h-20"
-            />
-            <p className="font-semibold">About John</p>
-            <p className="text-gray-600 text-sm">Software Engineer</p>
-            <p className="text-gray-500 mt-4 text-sm">
-              Lorem Ipsum has been the industry's standard dummy text.
-            </p>
-          </div>
-          <div className="testimonial-user">
-            <img
-              src="https://via.placeholder.com/150"
-              alt="User 3"
-              className="mx-auto rounded-full mb-4 h-20"
-            />
-            
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-red-600 text-lg font-semibold mb-2">Our testimonial</h2>
+          <h3 className="text-black text-2xl font-bold mb-8">What our users say about us</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="testimonial-user">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="User 1"
+                className="rounded-full mb-4 h-20 mx-auto"
+              />
+            </div>
+            <div className="testimonial-user">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="User 2"
+                className="rounded-full mb-4 h-20 mx-auto"
+              />
+              <p className="font-semibold">About John</p>
+              <p className="text-gray-600 text-sm">Software Engineer</p>
+              <p className="text-gray-500 mt-4 text-sm">
+                Lorem Ipsum has been the industry's standard dummy text.
+              </p>
+            </div>
+            <div className="testimonial-user">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="User 3"
+                className="rounded-full mb-4 h-20 mx-auto"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-
-
-      <div className="h-96"></div>
+      </section>
     </div>
-
-    
   );
 }
 

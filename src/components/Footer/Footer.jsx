@@ -216,14 +216,16 @@ function Footer() {
             </div>
           </div>
 
-          <div className="mt-8 flex justify-between items-center">
+          <hr className="bg-white my-4 "/>
+          <div className="mt-8 flex justify-between items-center w-3/4">
+          <span className="text-gray-600 font-bold text-2xl">Your logo</span>
             <span className="text-gray-600">
               &copy; 2024-Powered by Webflow With{" "}
               <a href="#" className="text-blue-600 hover:text-blue-800">
                 Buy this template for $69 USD
               </a>
             </span>
-            <span className="text-gray-600">Your logo</span>
+            
           </div>
         </div>
       </footer>

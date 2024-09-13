@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HeroImage from "/public/images/productbyimg.png";
+import HeroImage from "/public/images/HeroImage.png";
 import { PrimaryBtn,  } from "../index";
 
 function Hero() {
@@ -21,7 +21,7 @@ function Hero() {
         </div>
 
         {/* Text Section */}
-        <div className="w-full md:w-2/4 flex flex-col items-start justify-center text-left mt-12 md:mt-0 px-8 md:px-16">
+        <div className="w-full md:w-3/6 flex flex-col items-start justify-center text-left mt-12 md:mt-0 px-8 md:px-52">
           <h2 className="text-base text-secondary font-semibold uppercase mb-2">
             In the spotlight
           </h2>
